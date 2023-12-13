@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+    #wrapper {
+    height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+perspective: 10px;
+
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.background{
+    transform: translatez(-40px) scale(5);
+}
+
+.foreground{
+    transform: translatez(-25px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1{
+    position: relative;
+    top: 6rem;
+    font-size: 10rem;
+    letter-spacing: 6px;
+    color: white;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+}
+section{
+    background-color: white;
+    color: rgb(12, 11, 11);
+    padding: 6rem 0;
+}
+.secHeading{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(56, 224, 236);
+    height: 500px;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translate(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    font-size: 600;
+}
+
+.bg1{
+    background-image: url(car3.jpg);
+}
+
+.bg2{
+    background-image: url(r.jpg);
+   
+
+}
+.bg3{
+    background-image: url(b1.jpg);
+    
+
+}
+
+
+
+body{
+margin: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+overflow: hidden;
+background-color: rgb(1, 1, 37);
+}
+
+.topnav a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 23px 16px;
+text-decoration: none;
+font-size: 19px;
+}
+
+.topnav a:hover {
+background-color:white ;
+color: black;
+}
+
+.topnav a.active {
+background-color: white;
+color: black;
+}
+
+.topnav .search-container {
+float: right;
+}
+
+.topnav input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+.topnav .search-container button {
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: rgb(114, 114, 243);
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+
+.topnav .search-container button:hover {
+    background: blue;
+  }
+
+
+  .white {
+    margin-left: 2px;
+    height: 48px;
+    width: 100%;
+    background-color: rgb(0, 42, 255);
+    color: white;
+   gap: 100px;
+
+}
+#bg{
+    height: 60px;
+    width: 70px;
+    background-color: black;
+}
+
+h{
+    margin-left: 100px;
+    text-align: center;
+    font-size: 20px;
+color: white;
+}
+
+h:hover{
+    color: black;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid black;  
+      }
+    }
